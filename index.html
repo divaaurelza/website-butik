@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Batik Diva Zulfa</title>
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon" sizes="100x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand me-5" href="#"><img src="img/logo.jpeg" alt="" height="40" width="40"
+                    class="rounded-pill"></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-6 fw-bold text-warning" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-6 fw-bold text-warning" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-6 fw-bold text-warning" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+                <form class="d-flex mt-5 mt-md-0">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning me-5" type="submit">Search</button>
+                </form>
+
+                <button class="btn btn-warning fw-bold text-light px-3 mt-5 mt-md-0" data-bs-toggle="modal"
+                    data-bs-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal Form Registrasi -->
+    <div class="modal fade" id="registerModal" aria-labelledby="registerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content w-100">
+                <div class="modal-header">
+                    <h5 id="registerLabel">Register</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="First Name">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="Username" placeholder="Username">
+                            <label for="Username">Username</label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="Password" class="form-control" id="Password" placeholder="Password">
+                            <label for="Password">Password</label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="Password" class="form-control" id="Password" placeholder="Confirm Password">
+                            <label for="Password">Confirm Password</label>
+                        </div>
+                        <br>
+                        <button class="btn btn-warning ml-4 fw-bold text-light">Register</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="img" src="img/img3.jpg" class="d-block w-100" alt="..." width="auto" height="650">
+            </div>
+            <div class="carousel-item">
+                <img id="img" src="img/img.jpg" class="d-block w-100" alt="..." width="auto" height="650">
+            </div>
+            <div class="carousel-item">
+                <img id="img" src="img/imgg.jpg" class="d-block w-100" alt="..." width="auto" height="650">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Table -->
+    <div class="container">
+        <h2 class="text-center py-5">Varian Produk</h2>
+        <table class="table mt-5 mt-md-0">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Koleksi</th>
+                        <th scope="col">Ukuran</th>
+                        <th scope="col">Model</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>kemeja Batik</td>
+                        <td>S,M,L,XL,XXL</td>
+                        <td>Cewek & Cowok</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Daster</td>
+                        <td>all size</td>
+                        <td>Cewek</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Couple Batik</td>
+                        <td>Menyesuaikan</td>
+                        <td>Couple</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Baju Anak</td>
+                        <td>S,M,L,XL</td>
+                        <td>Cewek & Cowok</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Sarung Batik</td>
+                        <td>all size & big size</td>
+                        <td>Dewasa & Anak</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table>
+    </div>
+
+    <!-- Our Product -->
+    <div class="container py-5">
+        <h2 class="text-center py-5">Produk Kami</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mt-5 mt-md-0">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/imgg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Batik 01</h5>
+                        <p class="card-text text-muted">Batik 01 merupakan salah satu produk original buatan butik
+                            kami...
+                        </p>
+                        <a href="#" class="btn btn-outline-dark border-2 text-warning fw-bold px-4">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/produk1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Batik 02</h5>
+                        <p class="card-text text-muted">Batik 02 merupakan salah satu produk original buatan butik
+                            kami...
+                        </p>
+                        <a href="#" class="btn btn-outline-dark border-2 text-warning fw-bold px-4">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/produk2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Batik 03</h5>
+                        <p class="card-text text-muted">Batik 03 merupakan salah satu produk original buatan butik
+                            kami...
+                        </p>
+                        <a href="#" class="btn btn-outline-dark border-2 text-warning fw-bold px-4">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="produk.html" class="btn btn-warning mt-5 py-2 px-3 text-light fw-bold">Lihat Lebih Banyak</a>
+        </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="container py-5 mb-5">
+        <h2 class="text-center py-5">Lokasi</h2>
+        <div id="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.601812758726!2d109.66996527419312!3d-6.9381006679155615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7023e520823cdb%3A0x17d3ccba16879e01!2sGg.%203%2C%20Watusalam%20Kidul%2C%20Watusalam%2C%20Kec.%20Buaran%2C%20Kabupaten%20Pekalongan%2C%20Jawa%20Tengah%2051171!5e0!3m2!1sid!2sid!4v1698583969153!5m2!1sid!2sid"
+                width="1100" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="py-5"></iframe>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="container py-5">
+        <h2 class="text-center py-5">Tentang Kami</h2>
+        <div class="row">
+            <div class="col-md-6 me-5 mt-5 mt-md-0">
+                <div class="ratio ratio-16x9">
+                    <iframe src="video/video.mp4" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0">
+                <h2 class="fs-4">Diva Zulfa</h2>
+                <p>Diva Zulfa bukan hanya sebuah perusahaan produsen batik. Danar Hadi juga memiliki berbagai jenis jasa
+                    layanan
+                    yang dapat mengukuhkan Danar Hadi sebagai solusi satu pintu untuk segala kebutuhan yang berkaitan
+                    dengan
+                    batik.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Our Customers -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Testimoni dan Ulasan Pelanggan</h2>
+        <div class="card mb-3  mt-5 mt-md-0">
+            <div class="card-header">
+                <img src="img/logo.jpeg" class="rounded-pill me-3" width="30" height="30" alt="">
+                Putri Anjani
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>suka banget belanja disini, kualitasnya oke.</p>
+                </blockquote>
+
+                <div class="star mt-4">
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3  mt-5 mt-md-0">
+            <div class="card-header">
+                <img src="img/logo.jpeg" class="rounded-pill me-3" width="30" height="30" alt="">
+                Samuel Irvandi
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>bahannya enak dipake.</p>
+                </blockquote>
+                <div class="star mt-4">
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bx-star text-warning fs-6'></i>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-5  mt-5 mt-md-0">
+            <div class="card-header">
+                <img src="img/logo.jpeg" class="rounded-pill me-3" width="30" height="30" alt="">
+                Firli Agustina
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>harga terjangkau, kualitas bukan maen.</p>
+                </blockquote>
+                <div class="star mt-4">
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                    <i class='bx bxs-star text-warning fs-6'></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-floating ">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2" class="text-muted">Tambah Komentar</label>
+        </div>
+    </div>
+
+    <!-- Button on Top -->
+    <div class="button">
+        <a href="https://api.whatsapp.com/send?phone=62895801204436&text=Halo,saya%20ingin%20masuk%20menjadi%20member%20perpustakaan%20kota"
+            class="me-5" style="background-color: green;"><i class='bx bxl-whatsapp'></i></a>
+        <a href="#" id=""><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer bg-dark py-2 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mt-2 mt-5 mt-md-0">
+                    <p class="text-warning">Copyright 2023 &copy; Butik Diva Zulfa | Online Shopping</p>
+                </div>
+                <div class="col-lg-3 mt-5 mt-md-0">
+                    <div class="s1">
+                        <a href="https://instagram.com/museumbatikpekalongan?igshid=OGQ5ZDc2ODk2ZA=="><i
+                                class='bx bxl-instagram-alt text-warning'></i></a>
+                    </div>
+                    <div class="s1">
+                        <a href="https://www.youtube.com/@museumbatikpekalonganoffic6966"><i
+                                class='bx bxl-youtube text-warning'></i></a>
+                    </div>
+                    <div class="s1">
+                        <a href="https://m.facebook.com/profile.php?id=100082888330221"><i
+                                class='bx bxl-facebook text-warning'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

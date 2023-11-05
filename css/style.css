@@ -1,0 +1,56 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+
+#carousel {
+  margin-top: 60px;
+}
+
+
+table {
+  width: 100%;
+}
+
+#google-map {
+  height: 300px;
+}
+
+.s1 {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 9px;
+  margin-left: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.s1:hover {
+  background-color: #95eb00;
+  border: none;
+}
+
+.button a {
+  position: fixed;
+  text-decoration: none;
+  bottom: 4rem;
+  right: 3rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  padding: 0.5rem;
+  transition: 0.2s ease-out;
+}
+
+.button a i {
+  color: #fff;
+  transition: 0.2s ease-out;
+}
